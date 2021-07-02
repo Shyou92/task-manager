@@ -1,4 +1,6 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts/Inter-Web/inter.css);
 
-@import url(page.css);
+@import url(./page.css);
+
+@import url(./components/Signup-signin/Signup-signin.css);
