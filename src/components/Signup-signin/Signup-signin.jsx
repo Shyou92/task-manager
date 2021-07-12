@@ -85,7 +85,7 @@ function SignupSignin() {
             </div>
             <button className="sign__submit">Sign up</button>
 
-            <p className="sign-in__social-text">Or sign in with social platforms</p>
+            <p className="sign-in__social-text">Or sign up with social platforms</p>
 
             <nav className="sign-in__social-navigation">
               <ul className="sign-in__social-list">
