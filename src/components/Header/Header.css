@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin: 20px;
+  background-color: #4481eb;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header__userInfo {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__userInfo-name {
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.header__userInfo-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
