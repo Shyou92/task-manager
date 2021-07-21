@@ -8,6 +8,14 @@ function Cardboard() {
       <Card />
       <Card />
       <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </section>
   )
 }

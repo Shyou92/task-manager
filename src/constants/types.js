@@ -1,0 +1,2 @@
+export const OPEN_NAVBAR = 'NAVBAR/OPEN_NAVBAR';
+export const CLOSE_NAVBAR = 'NAVBAR/CLOSE_NAVBAR';

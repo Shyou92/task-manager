@@ -1,22 +1,22 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from 'react';
 import Preloader from '../Preloader/Preloader';
-import SignupSignin from "../Signup-signin/Signup-signin";
+import SignupSignin from '../Signup-signin/Signup-signin';
 import Board from '../Board/Board';
 
-function App() {
+function App({ store }) {
   const [isLoading, setIsLoaded] = useState(false);
 
-  useLayoutEffect( () => {
+  useLayoutEffect(() => {
     setIsLoaded(true);
-  }, [])
+  }, []);
 
   setInterval(() => setIsLoaded(false), 3500);
 
   return (
-    <div className="App">
-      <div className="page">
+    <div className='App'>
+      <div className='page'>
         {/* {isLoading ? <Preloader /> : <SignupSignin/>} */}
-        
+
         <Board />
       </div>
     </div>

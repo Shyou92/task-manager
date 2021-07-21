@@ -1,6 +1,11 @@
 .navbar {
   width: 15%;
   border: 1px solid red;
+  display: none;
+}
+
+.navbar_is-opened {
+  display: block;
 }
 
 .navbar__list {
@@ -31,10 +36,10 @@
   margin: 3px 0;
   margin-left: 92%;
   cursor: pointer;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .navbar__close:hover {
-  opacity: .5;
-  transition: .4s;
+  opacity: 0.5;
+  transition: 0.4s;
 }

@@ -39,3 +39,11 @@
 .card__checkbox {
   margin-top: 10px;
 }
+
+.card__checkbox-item {
+  margin-left: 5px;
+}
+
+.card__checkbox-unselectable {
+  user-select: none;
+}
