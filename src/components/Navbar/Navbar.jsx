@@ -5,23 +5,33 @@ import { openNavbar, closeNavbar } from '../../redux/actionCreators';
 
 function Navbar({ isOpened }) {
   return (
-    <section className={`navbar ${isOpened ? 'navbar_is-opened' : ''}`}>
-      <button
-        type='button'
-        className='navbar__close'
-        onClick={() => store.dispatch(closeNavbar(false))}
-      ></button>
-      <nav className='navbar__list'>
-        <Link to='/plan' className='navbar__list-item'>
-          План
-        </Link>
-        <Link to='/process' className='navbar__list-item'>
-          Выполняется
-        </Link>
-        <Link to='/releaze' className='navbar__list-item'>
-          Сделано
-        </Link>
-      </nav>
+    <section
+      className={`navbar-background ${
+        isOpened ? 'navbar-background_is-opened' : 'navbar-background_is-closed'
+      }`}
+    >
+      <div
+        className={`navbar ${
+          isOpened ? 'navbar_is-opened' : 'navbar_is-closed'
+        }`}
+      >
+        <button
+          type='button'
+          className='navbar__close'
+          onClick={() => store.dispatch(closeNavbar(false))}
+        ></button>
+        <nav className='navbar__list'>
+          <Link to='/plan' className='navbar__list-item'>
+            План
+          </Link>
+          <Link to='/process' className='navbar__list-item'>
+            Выполняется
+          </Link>
+          <Link to='/releaze' className='navbar__list-item'>
+            Сделано
+          </Link>
+        </nav>
+      </div>
     </section>
   );
 }
