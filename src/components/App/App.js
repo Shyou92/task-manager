@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Preloader from '../Preloader/Preloader';
 import SignupSignin from '../Signup-signin/Signup-signin';
+import Homepage from '../Homepage/Homepage';
 import Board from '../Board/Board';
 
 function App({ store }) {
@@ -15,9 +17,14 @@ function App({ store }) {
   return (
     <div className='App'>
       <div className='page'>
-        {/* {isLoading ? <Preloader /> : <SignupSignin/>} */}
+        <Switch>
+          <Route exact path='/'>
+            <Homepage />
+          </Route>
 
-        <Board />
+          <Board />
+        </Switch>
+        {/* {isLoading ? <Preloader /> : <SignupSignin/>} */}
       </div>
     </div>
   );

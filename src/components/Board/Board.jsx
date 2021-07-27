@@ -9,7 +9,7 @@ function Board() {
       <Navbar />
       <Table />
     </section>
-  )
+  );
 }
 
 export default Board;
