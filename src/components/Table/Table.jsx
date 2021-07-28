@@ -2,11 +2,13 @@ import { Route, Switch } from 'react-router-dom';
 import Plan from '../Plan/Plan';
 import Processing from '../Processing/Processing';
 import Releazed from '../Releazed/Releazed';
-import InputForm from '../InputForm/InputForm';
+import AddTaskForm from '../AddTaskForm/addTaskForm';
 
 function Table() {
   return (
     <section className='table'>
+      <button className='table__addTask'>Добавить</button>
+
       <Switch>
         <Route path='/plan'>
           <Plan />
@@ -18,9 +20,9 @@ function Table() {
           <Releazed />
         </Route>
       </Switch>
-      <InputForm />
+      <AddTaskForm />
     </section>
-  )
+  );
 }
 
 export default Table;

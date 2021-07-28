@@ -1,0 +1,23 @@
+.addTaskForm {
+  background-color: white;
+  position: relative;
+  display: none;
+  visibility: hidden;
+  width: 30%;
+  height: 20%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.addTaskForm_is-opened {
+  display: flex;
+  visibility: visible;
+  position: absolute;
+  top: 18%;
+  left: 30%;
+  flex-direction: column;
+}
+
+.addTaskForm__closeButton {
+  margin-left: 96%;
+}

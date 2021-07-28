@@ -1,3 +1,21 @@
 .table {
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.table__addTask {
+  width: 8rem;
+  padding: 1rem;
+  align-self: center;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #04befe;
+  color: white;
+}
+
+.table__addTask:hover {
+  background-color: #4481eb;
+  transition: 0.8s;
 }
